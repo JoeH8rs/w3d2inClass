@@ -1,3 +1,3 @@
-angular.module('myApp').service('myService', function () {
-	
-})
+angular.module('svcApp').service('myService', function () {
+
+});

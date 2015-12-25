@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp" lang="en"> 
+<html ng-app="svcApp" lang="en"> 
 <head>
 	<meta charset="UTF-8">
 	<title>Joe's Website</title>
@@ -9,6 +9,14 @@
 </head>
 <body ng-controller="mainControl">
 	<h1>{{name}}</h1>
+<input ng-model="ourData">
+</input><br>
+{{ourData}}
+<br>
+<div ng-repeat="item in items"> {{item}}</div>
+
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.js"></script>
