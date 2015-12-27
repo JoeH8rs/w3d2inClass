@@ -1,8 +1,9 @@
 angular.module('svcApp').controller('mainControl',
-    function ($scope) {
+    function ($scope, ourSvc) {
         $scope.items = [];
-
-		
+        $scope.words = ourSvc.saySomething;
+		// comming from service.js
+        
         $scope.$watch('ourData', function (newValue, oldValue) {
             // $watch = when ourData changes call this function.
             var newItem = newValue;
@@ -12,6 +13,8 @@ angular.module('svcApp').controller('mainControl',
                 $scope.ourData = '';
             }
         });
+        
+        // This contorler makes requestes. it deligates. 
 	
 
 	});
